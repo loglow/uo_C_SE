@@ -1,4 +1,4 @@
-# μo_C SE
+# µo_C SE (uo_C, Ornament & Crime) Eurorack [Rev B]
 
 ## 8HP Eurorack module | Polymorphic CV generator
 
