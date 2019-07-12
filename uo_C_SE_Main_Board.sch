@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -469,13 +469,13 @@ EC12E series with push-on switch</description>
 <text x="0" y="0" size="1" layer="51" ratio="10" align="center">&gt;NAME</text>
 </package>
 <package name="DISPLAY-MODULE">
-<pad name="3" x="-2.54" y="5.7" drill="1.016" diameter="1.778"/>
-<pad name="4" x="0" y="5.7" drill="1.016" diameter="1.778"/>
-<pad name="5" x="2.54" y="5.7" drill="1.016" diameter="1.778"/>
-<pad name="6" x="5.08" y="5.7" drill="1.016" diameter="1.778"/>
-<pad name="2" x="-5.08" y="5.7" drill="1.016" diameter="1.778"/>
-<pad name="1" x="-7.62" y="5.7" drill="1.016" diameter="1.778"/>
-<pad name="7" x="7.62" y="5.7" drill="1.016" diameter="1.778"/>
+<pad name="3" x="-2.54" y="5.7" drill="1.524" diameter="2.286"/>
+<pad name="4" x="0" y="5.7" drill="1.524" diameter="2.286"/>
+<pad name="5" x="2.54" y="5.7" drill="1.524" diameter="2.286"/>
+<pad name="6" x="5.08" y="5.7" drill="1.524" diameter="2.286"/>
+<pad name="2" x="-5.08" y="5.7" drill="1.524" diameter="2.286"/>
+<pad name="1" x="-7.62" y="5.7" drill="1.524" diameter="2.286"/>
+<pad name="7" x="7.62" y="5.7" drill="1.524" diameter="2.286"/>
 <wire x1="-14.7" y1="7.35" x2="14.7" y2="7.35" width="0.127" layer="21"/>
 <wire x1="14.7" y1="7.35" x2="14.7" y2="-7.35" width="0.127" layer="21"/>
 <wire x1="14.7" y1="-7.35" x2="-14.7" y2="-7.35" width="0.127" layer="21"/>
@@ -496,12 +496,12 @@ EC12E series with push-on switch</description>
 <wire x1="-7" y1="-14.55" x2="-6" y2="-13.55" width="0.127" layer="21" curve="-90"/>
 <wire x1="-17.75" y1="8.95" x2="-16.75" y2="9.95" width="0.127" layer="21" curve="-90"/>
 <wire x1="16.75" y1="9.95" x2="17.75" y2="8.95" width="0.127" layer="21" curve="-90"/>
-<pad name="G2" x="-13.5" y="-11.8" drill="1.016" diameter="1.778"/>
-<pad name="G5" x="13.5" y="-11.8" drill="1.016" diameter="1.778"/>
-<pad name="G1" x="-13.5" y="-9.26" drill="1.016" diameter="1.778"/>
-<pad name="G3" x="-13.5" y="-14.34" drill="1.016" diameter="1.778"/>
-<pad name="G6" x="13.5" y="-9.26" drill="1.016" diameter="1.778"/>
-<pad name="G4" x="13.5" y="-14.34" drill="1.016" diameter="1.778"/>
+<pad name="G2" x="-13.5" y="-11.8" drill="1.524" diameter="2.286"/>
+<pad name="G5" x="13.5" y="-11.8" drill="1.524" diameter="2.286"/>
+<pad name="G1" x="-13.5" y="-9.26" drill="1.524" diameter="2.286"/>
+<pad name="G3" x="-13.5" y="-14.34" drill="1.524" diameter="2.286"/>
+<pad name="G6" x="13.5" y="-9.26" drill="1.524" diameter="2.286"/>
+<pad name="G4" x="13.5" y="-14.34" drill="1.524" diameter="2.286"/>
 <text x="0" y="0" size="1" layer="21" ratio="10" align="center">&gt;NAME</text>
 </package>
 <package name="M2.5-HOLE">
@@ -750,6 +750,30 @@ EC12E series with push-on switch</description>
 <smd name="2" x="1.6" y="0" dx="1.2" dy="2" layer="1"/>
 <text x="0" y="2.3" size="1" layer="21" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="0" size="1" layer="51" ratio="10" align="center">&gt;NAME</text>
+</package>
+<package name="PTH-PASSIVE">
+<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.778"/>
+<pad name="2" x="3.81" y="0" drill="1.016" diameter="1.778"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.127" layer="21"/>
+<text x="0" y="0" size="1.27" layer="21" ratio="10" align="center">&gt;VALUE</text>
+</package>
+<package name="M2.5-HOLE-GND">
+<pad name="P$1" x="0" y="0" drill="2.75" diameter="5" thermals="no"/>
+<pad name="P$2" x="0" y="1.95" drill="0.3556" stop="no" thermals="no"/>
+<pad name="P$3" x="0" y="-1.95" drill="0.3556" stop="no" thermals="no"/>
+<pad name="P$4" x="-1.95" y="0" drill="0.3556" stop="no" thermals="no"/>
+<pad name="P$5" x="1.95" y="0" drill="0.3556" stop="no" thermals="no"/>
+<pad name="P$6" x="1.4" y="1.4" drill="0.3556" stop="no" thermals="no"/>
+<pad name="P$7" x="-1.4" y="1.4" drill="0.3556" stop="no" thermals="no"/>
+<pad name="P$8" x="-1.4" y="-1.4" drill="0.3556" stop="no" thermals="no"/>
+<pad name="P$9" x="1.4" y="-1.4" drill="0.3556" stop="no" thermals="no"/>
 </package>
 </packages>
 <symbols>
@@ -1097,7 +1121,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0805" package="0805-NP">
@@ -1106,7 +1132,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-1206" package="1206-NP">
@@ -1115,7 +1143,20 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-PTH" package="PTH-PASSIVE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1131,7 +1172,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0805" package="0805-NP">
@@ -1140,7 +1183,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-1206" package="1206-NP">
@@ -1149,7 +1194,20 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-PTH" package="PTH-PASSIVE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1173,7 +1231,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="302-S101" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-PTH-0.05-SHROUDED" package="PTH-0.05-2X5-SHROUDED">
@@ -1190,7 +1250,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-PTH-0.05-SHROUDED-SMD" package="PTH-0.05-2X5-SHROUDED-SMD">
@@ -1207,7 +1269,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1223,7 +1287,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="1N5819HW-7-F" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1239,7 +1305,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="POS" pad="A"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-6.6MM" package="ELECTRO-SMD-6.6MM">
@@ -1248,7 +1316,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="POS" pad="A"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1266,7 +1336,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="ADP150AUJZ-3.3-R7" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1285,7 +1357,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="VOUT" pad="2 4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="LM1117MPX-5.0/NOPB" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-TO-252" package="TO-252">
@@ -1295,7 +1369,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="VOUT" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-WSON-8" package="WSON-8">
@@ -1305,7 +1381,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="VOUT" pad="5 6 7 9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1337,7 +1415,9 @@ EC12E series with push-on switch</description>
 <connect gate="P" pin="-" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="MCP6004T-I/ST" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1354,7 +1434,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="3" pad="P3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="WQP-PJ398SM"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1371,7 +1453,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="MMBT3904LT1G" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-SOT323-BEC" package="SOT-323">
@@ -1381,7 +1465,9 @@ EC12E series with push-on switch</description>
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="MMBT3904LT1G" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1413,7 +1499,9 @@ EC12E series with push-on switch</description>
 <connect gate="P" pin="-" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="OPA4172IPW" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1431,7 +1519,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="LM4040DIM3-5.0/NOPB" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1452,7 +1542,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="B" pin="2" pad="E"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="ED1212S-24P-24C-25KC" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1468,7 +1560,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="2" pad="B1 B2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-EVQQ2" package="BUTTON-EVQQ2">
@@ -1477,7 +1571,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="2" pad="B1 B2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-PTH" package="TL1105">
@@ -1486,7 +1582,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="2" pad="3 4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="TL1105DF160Q" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1516,7 +1614,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="VREF-OUT" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="DAC8565IAPW" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1537,7 +1637,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="TD-OCSE-B-DM" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-BASIC" package="SMD-0.1-1X7">
@@ -1566,7 +1668,19 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="DNP" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-GND" package="M2.5-HOLE-GND">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1593,7 +1707,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="GND" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="TSM-113-04-L-SV" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1621,7 +1737,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="VIN" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="TSM-114-04-L-SV" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1637,7 +1755,9 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURERPARTNUMBER" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1714,41 +1834,95 @@ LETTER landscape</description>
 <part name="H3" library="uo_C_SE_Library" deviceset="HEADER-2X5" device="-PTH-0.1-SHROUDED"/>
 <part name="D2" library="uo_C_SE_Library" deviceset="DIODE" device="-SOD123"/>
 <part name="D1" library="uo_C_SE_Library" deviceset="DIODE" device="-SOD123"/>
-<part name="C17" library="uo_C_SE_Library" deviceset="CAP-P" device="-6.6MM" value="22u"/>
-<part name="C18" library="uo_C_SE_Library" deviceset="CAP-P" device="-6.6MM" value="22u"/>
+<part name="C17" library="uo_C_SE_Library" deviceset="CAP-P" device="-6.6MM" value="22u">
+<attribute name="MANUFACTURERPARTNUMBER" value="865230443003"/>
+</part>
+<part name="C18" library="uo_C_SE_Library" deviceset="CAP-P" device="-6.6MM" value="22u">
+<attribute name="MANUFACTURERPARTNUMBER" value="865230443003"/>
+</part>
 <part name="U2" library="uo_C_SE_Library" deviceset="LM1117" device="-SOT-223"/>
 <part name="U3" library="uo_C_SE_Library" deviceset="ADP150" device=""/>
-<part name="C10" library="uo_C_SE_Library" deviceset="CAP-P" device="-4.3MM" value="10u"/>
-<part name="C11" library="uo_C_SE_Library" deviceset="CAP-P" device="-4.3MM" value="10u"/>
-<part name="C24" library="uo_C_SE_Library" deviceset="CAP-P" device="-4.3MM" value="10u"/>
-<part name="C21" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
+<part name="C10" library="uo_C_SE_Library" deviceset="CAP-P" device="-4.3MM" value="10u">
+<attribute name="MANUFACTURERPARTNUMBER" value="865230440002"/>
+</part>
+<part name="C11" library="uo_C_SE_Library" deviceset="CAP-P" device="-4.3MM" value="10u">
+<attribute name="MANUFACTURERPARTNUMBER" value="865230440002"/>
+</part>
+<part name="C24" library="uo_C_SE_Library" deviceset="CAP-P" device="-4.3MM" value="10u">
+<attribute name="MANUFACTURERPARTNUMBER" value="865230440002"/>
+</part>
+<part name="C21" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
 <part name="U5" library="uo_C_SE_Library" deviceset="MCP6004" device="-TSSOP-14"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="J2" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
 <part name="J5" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
 <part name="J8" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
 <part name="J11" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
-<part name="R10" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="75k"/>
-<part name="R15" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R11" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="75k"/>
-<part name="R16" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R12" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="75k"/>
-<part name="R17" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R13" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="75k"/>
-<part name="R18" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R22" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k"/>
-<part name="R23" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k"/>
-<part name="R24" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k"/>
-<part name="R25" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k"/>
-<part name="C27" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="560p"/>
-<part name="C28" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="560p"/>
-<part name="C29" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="560p"/>
-<part name="C30" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="560p"/>
-<part name="R29" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100R"/>
-<part name="R30" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100R"/>
-<part name="R31" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100R"/>
-<part name="R32" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100R"/>
-<part name="J1" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
+<part name="R10" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="75k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF7502V"/>
+</part>
+<part name="R15" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R11" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="75k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF7502V"/>
+</part>
+<part name="R16" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R12" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="75k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF7502V"/>
+</part>
+<part name="R17" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R13" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="75k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF7502V"/>
+</part>
+<part name="R18" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R22" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF3302V"/>
+</part>
+<part name="R23" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF3302V"/>
+</part>
+<part name="R24" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF3302V"/>
+</part>
+<part name="R25" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF3302V"/>
+</part>
+<part name="C27" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="560p">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10C561JB8NNNC"/>
+</part>
+<part name="C28" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="560p">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10C561JB8NNNC"/>
+</part>
+<part name="C29" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="560p">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10C561JB8NNNC"/>
+</part>
+<part name="C30" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="560p">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10C561JB8NNNC"/>
+</part>
+<part name="R29" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF1000V"/>
+</part>
+<part name="R30" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF1000V"/>
+</part>
+<part name="R31" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF1000V"/>
+</part>
+<part name="R32" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF1000V"/>
+</part>
+<part name="J1" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN">
+<attribute name="MANUFACTURERPARTNUMBER" value="WQP-PJ398SM"/>
+</part>
 <part name="J4" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
 <part name="J7" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
 <part name="J10" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
@@ -1756,75 +1930,185 @@ LETTER landscape</description>
 <part name="Q2" library="uo_C_SE_Library" deviceset="NPN" device="-SOT23-BEC"/>
 <part name="Q3" library="uo_C_SE_Library" deviceset="NPN" device="-SOT23-BEC"/>
 <part name="Q4" library="uo_C_SE_Library" deviceset="NPN" device="-SOT23-BEC"/>
-<part name="R20" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R28" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R36" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R42" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R19" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k"/>
-<part name="R27" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k"/>
-<part name="R35" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k"/>
-<part name="R41" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k"/>
+<part name="R20" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R28" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R36" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R42" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R19" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF3302V"/>
+</part>
+<part name="R27" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF3302V"/>
+</part>
+<part name="R35" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF3302V"/>
+</part>
+<part name="R41" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="33k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF3302V"/>
+</part>
 <part name="U6" library="uo_C_SE_Library" deviceset="OPA4172" device=""/>
-<part name="C22" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="22p"/>
-<part name="C26" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="22p"/>
-<part name="C32" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="22p"/>
-<part name="C33" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="22p"/>
-<part name="R8" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R21" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R37" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R38" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k"/>
-<part name="R7" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="220R"/>
-<part name="R14" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="220R"/>
-<part name="R33" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="220R"/>
-<part name="R34" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="220R"/>
-<part name="R9" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="24.9k"/>
-<part name="R26" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="24.9k"/>
-<part name="R39" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="24.9k"/>
-<part name="R40" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="24.9k"/>
+<part name="C22" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="22p">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10C220FB8NNWC"/>
+</part>
+<part name="C26" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="22p">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10C220FB8NNWC"/>
+</part>
+<part name="C32" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="22p">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10C220FB8NNWC"/>
+</part>
+<part name="C33" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="22p">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10C220FB8NNWC"/>
+</part>
+<part name="R8" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R21" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R37" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R38" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="100k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB104V"/>
+</part>
+<part name="R7" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="220R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF2200V"/>
+</part>
+<part name="R14" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="220R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF2200V"/>
+</part>
+<part name="R33" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="220R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF2200V"/>
+</part>
+<part name="R34" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="220R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF2200V"/>
+</part>
+<part name="R9" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="24.9k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB2492V"/>
+</part>
+<part name="R26" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="24.9k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB2492V"/>
+</part>
+<part name="R39" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="24.9k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB2492V"/>
+</part>
+<part name="R40" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="24.9k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERA-3AEB2492V"/>
+</part>
 <part name="J3" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
 <part name="J6" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
 <part name="J9" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
 <part name="J12" library="uo_C_SE_Library" deviceset="JACK" device="-THONKICONN"/>
-<part name="C2" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="C4" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.47u"/>
-<part name="C7" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="R2" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="47k"/>
-<part name="R3" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="47k"/>
-<part name="C31" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="C34" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
+<part name="C2" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="C4" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.47u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B474KA8NFNC"/>
+</part>
+<part name="C7" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="R2" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="47k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF4702V"/>
+</part>
+<part name="R3" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="47k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF4702V"/>
+</part>
+<part name="C31" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="C34" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
 <part name="U4" library="uo_C_SE_Library" deviceset="LM4040" device="-SOT-23"/>
-<part name="C19" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="1u"/>
-<part name="C23" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="1u"/>
-<part name="R6" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="2k"/>
-<part name="C16" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="C13" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="C14" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="C15" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
+<part name="C19" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B105KA8NNNC"/>
+</part>
+<part name="C23" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B105KA8NNNC"/>
+</part>
+<part name="R6" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="2k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF2001V"/>
+</part>
+<part name="C16" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="C13" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="C14" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="C15" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
 <part name="S2" library="uo_C_SE_Library" deviceset="ENCODER-SW" device=""/>
 <part name="S3" library="uo_C_SE_Library" deviceset="ENCODER-SW" device=""/>
-<part name="C9" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.47u"/>
+<part name="C9" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.47u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B474KA8NFNC"/>
+</part>
 <part name="S1" library="uo_C_SE_Library" deviceset="SPST" device="-PTH"/>
 <part name="S4" library="uo_C_SE_Library" deviceset="SPST" device="-PTH"/>
-<part name="R4" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="510R"/>
-<part name="R5" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="510R"/>
-<part name="C8" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="C12" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="U1" library="uo_C_SE_Library" deviceset="DAC8565" device=""/>
-<part name="C5" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="C6" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="A1" library="uo_C_SE_Library" deviceset="OLED-HEADER" device="-MODULE"/>
-<part name="C1" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
-<part name="R1" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="10k"/>
+<part name="R4" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="510R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF5100V"/>
+</part>
+<part name="R5" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="510R">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF5100V"/>
+</part>
+<part name="C8" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="C12" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="U1" library="uo_C_SE_Library" deviceset="DAC8565" device="">
+<attribute name="MANUFACTURERPARTNUMBER" value="DAC8565IAPW"/>
+</part>
+<part name="C5" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="C6" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="A1" library="uo_C_SE_Library" deviceset="OLED-HEADER" device="-MODULE">
+<attribute name="MANUFACTURERPARTNUMBER" value="TD-OCSE-B-DM"/>
+</part>
+<part name="C1" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
+<part name="R1" library="uo_C_SE_Library" deviceset="RESISTOR" device="-0603" value="10k">
+<attribute name="MANUFACTURERPARTNUMBER" value="ERJ-3EKF1002V"/>
+</part>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="HOLE3" library="uo_C_SE_Library" deviceset="HOLE" device=""/>
 <part name="HOLE1" library="uo_C_SE_Library" deviceset="HOLE" device=""/>
 <part name="HOLE2" library="uo_C_SE_Library" deviceset="HOLE" device=""/>
-<part name="C25" library="uo_C_SE_Library" deviceset="CAP-P" device="-4.3MM" value="10u"/>
-<part name="H1" library="uo_C_SE_Library" deviceset="TEENSY-3.2-1" device=""/>
-<part name="H2" library="uo_C_SE_Library" deviceset="TEENSY-3.2-2" device=""/>
-<part name="C3" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.47u"/>
-<part name="L1" library="uo_C_SE_Library" deviceset="INDUCTOR" device="-1210" value="10uH"/>
-<part name="C20" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u"/>
+<part name="C25" library="uo_C_SE_Library" deviceset="CAP-P" device="-4.3MM" value="10u">
+<attribute name="MANUFACTURERPARTNUMBER" value="865230440002"/>
+</part>
+<part name="H1" library="uo_C_SE_Library" deviceset="TEENSY-3.2-1" device="">
+<attribute name="MANUFACTURERPARTNUMBER" value="TSM-113-04-L-SV"/>
+</part>
+<part name="H2" library="uo_C_SE_Library" deviceset="TEENSY-3.2-2" device="">
+<attribute name="MANUFACTURERPARTNUMBER" value="TSM-114-04-L-SV"/>
+</part>
+<part name="C3" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.47u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B474KA8NFNC"/>
+</part>
+<part name="L1" library="uo_C_SE_Library" deviceset="INDUCTOR" device="-1210" value="10uH">
+<attribute name="MANUFACTURERPARTNUMBER" value="NLCV32T-100K-PFR"/>
+</part>
+<part name="C20" library="uo_C_SE_Library" deviceset="CAP-NP" device="-0603" value="0.1u">
+<attribute name="MANUFACTURERPARTNUMBER" value="CL10B104JB8NNNC"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1838,20 +2122,66 @@ Board derived from work by Max Stadler (mxmxmx)</text>
 <text x="247.65" y="19.05" size="3.81" layer="94" align="center-right">Main Processing</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="U1" gate="G$1" x="78.74" y="60.96"/>
-<instance part="C5" gate="G$1" x="45.72" y="55.88" rot="R270"/>
-<instance part="C6" gate="G$1" x="111.76" y="55.88" rot="R270"/>
-<instance part="A1" gate="G$1" x="60.96" y="129.54" rot="MR0"/>
-<instance part="C1" gate="G$1" x="73.66" y="132.08" rot="R90"/>
-<instance part="R1" gate="G$1" x="73.66" y="109.22" rot="R90"/>
-<instance part="HOLE3" gate="G$1" x="241.3" y="43.18"/>
-<instance part="HOLE1" gate="G$1" x="241.3" y="58.42"/>
-<instance part="HOLE2" gate="G$1" x="241.3" y="50.8"/>
-<instance part="H1" gate="G$1" x="154.94" y="137.16"/>
-<instance part="H2" gate="G$1" x="170.18" y="137.16"/>
-<instance part="C3" gate="G$1" x="195.58" y="127" rot="R90"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME1" gate="G$2" x="147.32" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="U1" gate="G$1" x="78.74" y="60.96" smashed="yes">
+<attribute name="NAME" x="78.74" y="67.31" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="78.74" y="64.77" size="1.016" layer="95" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="78.74" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C5" gate="G$1" x="45.72" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="48.26" y="55.88" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="43.18" y="55.88" size="1.143" layer="96" rot="R90" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="45.72" y="55.88" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C6" gate="G$1" x="111.76" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="114.3" y="55.88" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="109.22" y="55.88" size="1.143" layer="96" rot="R90" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="111.76" y="55.88" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="A1" gate="G$1" x="60.96" y="129.54" smashed="yes" rot="MR0">
+<attribute name="NAME" x="60.96" y="135.89" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="60.96" y="133.35" size="1.016" layer="95" rot="MR0" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="60.96" y="129.54" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
+<instance part="C1" gate="G$1" x="73.66" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.12" y="132.08" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="76.2" y="132.08" size="1.143" layer="96" rot="R270" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="73.66" y="132.08" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R1" gate="G$1" x="73.66" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.755" y="109.22" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="75.565" y="109.22" size="1.143" layer="96" rot="R90" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="73.66" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="HOLE3" gate="G$1" x="241.3" y="43.18" smashed="yes">
+<attribute name="NAME" x="241.3" y="45.72" size="1.27" layer="95" align="center"/>
+</instance>
+<instance part="HOLE1" gate="G$1" x="241.3" y="58.42" smashed="yes">
+<attribute name="NAME" x="241.3" y="60.96" size="1.27" layer="95" align="center"/>
+</instance>
+<instance part="HOLE2" gate="G$1" x="241.3" y="50.8" smashed="yes">
+<attribute name="NAME" x="241.3" y="53.34" size="1.27" layer="95" align="center"/>
+</instance>
+<instance part="H1" gate="G$1" x="154.94" y="137.16" smashed="yes">
+<attribute name="NAME" x="154.94" y="143.51" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="154.94" y="140.97" size="1.143" layer="96" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="154.94" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H2" gate="G$1" x="170.18" y="137.16" smashed="yes">
+<attribute name="NAME" x="170.18" y="143.51" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="170.18" y="140.97" size="1.143" layer="96" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="170.18" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="195.58" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="193.04" y="127" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="198.12" y="127" size="1.143" layer="96" rot="R270" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="195.58" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2230,80 +2560,291 @@ Board derived from work by Max Stadler (mxmxmx)</text>
 <text x="247.65" y="19.05" size="3.81" layer="94" align="center-right">Analog I/O</text>
 </plain>
 <instances>
-<instance part="U5" gate="A" x="124.46" y="157.48" rot="MR180"/>
-<instance part="U5" gate="B" x="124.46" y="129.54" rot="MR180"/>
-<instance part="U5" gate="C" x="124.46" y="73.66" rot="MR180"/>
-<instance part="U5" gate="D" x="124.46" y="101.6" rot="MR180"/>
-<instance part="U5" gate="P" x="119.38" y="55.88" rot="R270"/>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="FRAME2" gate="G$2" x="147.32" y="0"/>
-<instance part="J2" gate="G$1" x="93.98" y="157.48" rot="MR0"/>
-<instance part="J5" gate="G$1" x="93.98" y="129.54" rot="MR0"/>
-<instance part="J8" gate="G$1" x="93.98" y="101.6" rot="MR0"/>
-<instance part="J11" gate="G$1" x="93.98" y="73.66" rot="MR0"/>
-<instance part="R10" gate="G$1" x="111.76" y="165.1" rot="R90"/>
-<instance part="R15" gate="G$1" x="106.68" y="160.02"/>
-<instance part="R11" gate="G$1" x="111.76" y="137.16" rot="R90"/>
-<instance part="R16" gate="G$1" x="106.68" y="132.08"/>
-<instance part="R12" gate="G$1" x="111.76" y="109.22" rot="R90"/>
-<instance part="R17" gate="G$1" x="106.68" y="104.14"/>
-<instance part="R13" gate="G$1" x="111.76" y="81.28" rot="R90"/>
-<instance part="R18" gate="G$1" x="106.68" y="76.2"/>
-<instance part="R22" gate="G$1" x="121.92" y="170.18" rot="MR180"/>
-<instance part="R23" gate="G$1" x="121.92" y="142.24" rot="MR180"/>
-<instance part="R24" gate="G$1" x="121.92" y="114.3" rot="MR180"/>
-<instance part="R25" gate="G$1" x="121.92" y="86.36" rot="MR180"/>
-<instance part="C27" gate="G$1" x="129.54" y="165.1" rot="MR180"/>
-<instance part="C28" gate="G$1" x="129.54" y="137.16" rot="MR180"/>
-<instance part="C29" gate="G$1" x="129.54" y="109.22" rot="MR180"/>
-<instance part="C30" gate="G$1" x="129.54" y="81.28" rot="MR180"/>
-<instance part="R29" gate="G$1" x="139.7" y="157.48" rot="MR180"/>
-<instance part="R30" gate="G$1" x="139.7" y="129.54" rot="MR180"/>
-<instance part="R31" gate="G$1" x="139.7" y="101.6" rot="MR180"/>
-<instance part="R32" gate="G$1" x="139.7" y="73.66" rot="MR180"/>
-<instance part="J1" gate="G$1" x="30.48" y="157.48" rot="MR0"/>
-<instance part="J4" gate="G$1" x="30.48" y="129.54" rot="MR0"/>
-<instance part="J7" gate="G$1" x="30.48" y="101.6" rot="MR0"/>
-<instance part="J10" gate="G$1" x="30.48" y="73.66" rot="MR0"/>
-<instance part="Q1" gate="G$1" x="58.42" y="160.02"/>
-<instance part="Q2" gate="G$1" x="58.42" y="132.08"/>
-<instance part="Q3" gate="G$1" x="58.42" y="104.14"/>
-<instance part="Q4" gate="G$1" x="58.42" y="76.2"/>
-<instance part="R20" gate="G$1" x="43.18" y="160.02"/>
-<instance part="R28" gate="G$1" x="43.18" y="132.08"/>
-<instance part="R36" gate="G$1" x="43.18" y="104.14"/>
-<instance part="R42" gate="G$1" x="43.18" y="76.2"/>
-<instance part="R19" gate="G$1" x="50.8" y="154.94" rot="MR270"/>
-<instance part="R27" gate="G$1" x="50.8" y="127" rot="MR270"/>
-<instance part="R35" gate="G$1" x="50.8" y="99.06" rot="MR270"/>
-<instance part="R41" gate="G$1" x="50.8" y="71.12" rot="MR270"/>
-<instance part="U6" gate="A" x="190.5" y="160.02" rot="MR180"/>
-<instance part="U6" gate="B" x="190.5" y="132.08" rot="MR180"/>
-<instance part="U6" gate="C" x="190.5" y="104.14" rot="MR180"/>
-<instance part="U6" gate="D" x="190.5" y="76.2" rot="MR180"/>
-<instance part="U6" gate="P" x="195.58" y="55.88" rot="R270"/>
-<instance part="C22" gate="G$1" x="195.58" y="167.64" rot="R180"/>
-<instance part="C26" gate="G$1" x="195.58" y="139.7" rot="R180"/>
-<instance part="C32" gate="G$1" x="195.58" y="111.76" rot="R180"/>
-<instance part="C33" gate="G$1" x="195.58" y="83.82" rot="R180"/>
-<instance part="R8" gate="G$1" x="187.96" y="172.72" rot="MR180"/>
-<instance part="R21" gate="G$1" x="187.96" y="144.78" rot="MR180"/>
-<instance part="R37" gate="G$1" x="187.96" y="116.84" rot="MR180"/>
-<instance part="R38" gate="G$1" x="187.96" y="88.9" rot="MR180"/>
-<instance part="R7" gate="G$1" x="205.74" y="160.02" rot="MR180"/>
-<instance part="R14" gate="G$1" x="205.74" y="132.08" rot="MR180"/>
-<instance part="R33" gate="G$1" x="205.74" y="104.14" rot="MR180"/>
-<instance part="R34" gate="G$1" x="205.74" y="76.2" rot="MR180"/>
-<instance part="R9" gate="G$1" x="177.8" y="162.56" rot="MR180"/>
-<instance part="R26" gate="G$1" x="177.8" y="134.62" rot="MR180"/>
-<instance part="R39" gate="G$1" x="177.8" y="106.68" rot="MR180"/>
-<instance part="R40" gate="G$1" x="177.8" y="78.74" rot="MR180"/>
-<instance part="J3" gate="G$1" x="218.44" y="157.48"/>
-<instance part="J6" gate="G$1" x="218.44" y="129.54"/>
-<instance part="J9" gate="G$1" x="218.44" y="101.6"/>
-<instance part="J12" gate="G$1" x="218.44" y="73.66"/>
-<instance part="C31" gate="G$1" x="119.38" y="48.26" rot="MR0"/>
-<instance part="C34" gate="G$1" x="195.58" y="48.26" rot="MR0"/>
+<instance part="U5" gate="A" x="124.46" y="157.48" smashed="yes" rot="MR180">
+<attribute name="NAME" x="124.46" y="157.48" size="1.524" layer="95" rot="MR180" align="center"/>
+</instance>
+<instance part="U5" gate="B" x="124.46" y="129.54" smashed="yes" rot="MR180">
+<attribute name="NAME" x="124.46" y="129.54" size="1.524" layer="95" rot="MR180" align="center"/>
+</instance>
+<instance part="U5" gate="C" x="124.46" y="73.66" smashed="yes" rot="MR180">
+<attribute name="NAME" x="124.46" y="73.66" size="1.524" layer="95" rot="MR180" align="center"/>
+</instance>
+<instance part="U5" gate="D" x="124.46" y="101.6" smashed="yes" rot="MR180">
+<attribute name="NAME" x="124.46" y="101.6" size="1.524" layer="95" rot="MR180" align="center"/>
+</instance>
+<instance part="U5" gate="P" x="119.38" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="119.38" y="58.42" size="1.524" layer="95" align="center"/>
+</instance>
+<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME2" gate="G$2" x="147.32" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="J2" gate="G$1" x="93.98" y="157.48" smashed="yes" rot="MR0">
+<attribute name="NAME" x="93.98" y="161.29" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="93.98" y="153.67" size="1.016" layer="95" rot="MR0" align="center"/>
+</instance>
+<instance part="J5" gate="G$1" x="93.98" y="129.54" smashed="yes" rot="MR0">
+<attribute name="NAME" x="93.98" y="133.35" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="93.98" y="125.73" size="1.016" layer="95" rot="MR0" align="center"/>
+</instance>
+<instance part="J8" gate="G$1" x="93.98" y="101.6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="93.98" y="105.41" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="93.98" y="97.79" size="1.016" layer="95" rot="MR0" align="center"/>
+</instance>
+<instance part="J11" gate="G$1" x="93.98" y="73.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="93.98" y="77.47" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="93.98" y="69.85" size="1.016" layer="95" rot="MR0" align="center"/>
+</instance>
+<instance part="R10" gate="G$1" x="111.76" y="165.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="109.855" y="165.1" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="113.665" y="165.1" size="1.143" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="R15" gate="G$1" x="106.68" y="160.02" smashed="yes">
+<attribute name="NAME" x="106.68" y="161.925" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="106.68" y="158.115" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R11" gate="G$1" x="111.76" y="137.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="109.855" y="137.16" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="113.665" y="137.16" size="1.143" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="R16" gate="G$1" x="106.68" y="132.08" smashed="yes">
+<attribute name="NAME" x="106.68" y="133.985" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="106.68" y="130.175" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R12" gate="G$1" x="111.76" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="109.855" y="109.22" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="113.665" y="109.22" size="1.143" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="R17" gate="G$1" x="106.68" y="104.14" smashed="yes">
+<attribute name="NAME" x="106.68" y="106.045" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="106.68" y="102.235" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R13" gate="G$1" x="111.76" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="109.855" y="81.28" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="113.665" y="81.28" size="1.143" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="R18" gate="G$1" x="106.68" y="76.2" smashed="yes">
+<attribute name="NAME" x="106.68" y="78.105" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="106.68" y="74.295" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R22" gate="G$1" x="121.92" y="170.18" smashed="yes" rot="MR180">
+<attribute name="NAME" x="121.92" y="168.275" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="121.92" y="172.085" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R23" gate="G$1" x="121.92" y="142.24" smashed="yes" rot="MR180">
+<attribute name="NAME" x="121.92" y="140.335" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="121.92" y="144.145" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R24" gate="G$1" x="121.92" y="114.3" smashed="yes" rot="MR180">
+<attribute name="NAME" x="121.92" y="112.395" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="121.92" y="116.205" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R25" gate="G$1" x="121.92" y="86.36" smashed="yes" rot="MR180">
+<attribute name="NAME" x="121.92" y="84.455" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="121.92" y="88.265" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="C27" gate="G$1" x="129.54" y="165.1" smashed="yes" rot="MR180">
+<attribute name="NAME" x="129.54" y="162.56" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="129.54" y="167.64" size="1.143" layer="96" rot="MR0" align="center"/>
+</instance>
+<instance part="C28" gate="G$1" x="129.54" y="137.16" smashed="yes" rot="MR180">
+<attribute name="NAME" x="129.54" y="134.62" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="129.54" y="139.7" size="1.143" layer="96" rot="MR0" align="center"/>
+</instance>
+<instance part="C29" gate="G$1" x="129.54" y="109.22" smashed="yes" rot="MR180">
+<attribute name="NAME" x="129.54" y="106.68" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="129.54" y="111.76" size="1.143" layer="96" rot="MR0" align="center"/>
+</instance>
+<instance part="C30" gate="G$1" x="129.54" y="81.28" smashed="yes" rot="MR180">
+<attribute name="NAME" x="129.54" y="78.74" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="129.54" y="83.82" size="1.143" layer="96" rot="MR0" align="center"/>
+</instance>
+<instance part="R29" gate="G$1" x="139.7" y="157.48" smashed="yes" rot="MR180">
+<attribute name="NAME" x="139.7" y="155.575" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="139.7" y="159.385" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R30" gate="G$1" x="139.7" y="129.54" smashed="yes" rot="MR180">
+<attribute name="NAME" x="139.7" y="127.635" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="139.7" y="131.445" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R31" gate="G$1" x="139.7" y="101.6" smashed="yes" rot="MR180">
+<attribute name="NAME" x="139.7" y="99.695" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="139.7" y="103.505" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R32" gate="G$1" x="139.7" y="73.66" smashed="yes" rot="MR180">
+<attribute name="NAME" x="139.7" y="71.755" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="139.7" y="75.565" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="J1" gate="G$1" x="30.48" y="157.48" smashed="yes" rot="MR0">
+<attribute name="NAME" x="30.48" y="161.29" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="30.48" y="153.67" size="1.016" layer="95" rot="MR0" align="center"/>
+<attribute name="MANUFACTURERPARTNUMBER" x="30.48" y="157.48" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
+<instance part="J4" gate="G$1" x="30.48" y="129.54" smashed="yes" rot="MR0">
+<attribute name="NAME" x="30.48" y="133.35" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="30.48" y="125.73" size="1.016" layer="95" rot="MR0" align="center"/>
+</instance>
+<instance part="J7" gate="G$1" x="30.48" y="101.6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="30.48" y="105.41" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="30.48" y="97.79" size="1.016" layer="95" rot="MR0" align="center"/>
+</instance>
+<instance part="J10" gate="G$1" x="30.48" y="73.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="30.48" y="77.47" size="1.524" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="30.48" y="69.85" size="1.016" layer="95" rot="MR0" align="center"/>
+</instance>
+<instance part="Q1" gate="G$1" x="58.42" y="160.02" smashed="yes">
+<attribute name="NAME" x="60.325" y="160.02" size="1.524" layer="95" align="center-left"/>
+<attribute name="VALUE" x="66.04" y="160.02" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="Q2" gate="G$1" x="58.42" y="132.08" smashed="yes">
+<attribute name="NAME" x="60.325" y="132.08" size="1.524" layer="95" align="center-left"/>
+<attribute name="VALUE" x="66.04" y="132.08" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="Q3" gate="G$1" x="58.42" y="104.14" smashed="yes">
+<attribute name="NAME" x="60.325" y="104.14" size="1.524" layer="95" align="center-left"/>
+<attribute name="VALUE" x="66.04" y="104.14" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="Q4" gate="G$1" x="58.42" y="76.2" smashed="yes">
+<attribute name="NAME" x="60.325" y="76.2" size="1.524" layer="95" align="center-left"/>
+<attribute name="VALUE" x="66.04" y="76.2" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="R20" gate="G$1" x="43.18" y="160.02" smashed="yes">
+<attribute name="NAME" x="43.18" y="161.925" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="43.18" y="158.115" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R28" gate="G$1" x="43.18" y="132.08" smashed="yes">
+<attribute name="NAME" x="43.18" y="133.985" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="43.18" y="130.175" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R36" gate="G$1" x="43.18" y="104.14" smashed="yes">
+<attribute name="NAME" x="43.18" y="106.045" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="43.18" y="102.235" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R42" gate="G$1" x="43.18" y="76.2" smashed="yes">
+<attribute name="NAME" x="43.18" y="78.105" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="43.18" y="74.295" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R19" gate="G$1" x="50.8" y="154.94" smashed="yes" rot="MR270">
+<attribute name="NAME" x="48.895" y="154.94" size="1.524" layer="95" rot="MR270" align="center"/>
+<attribute name="VALUE" x="52.705" y="154.94" size="1.143" layer="96" rot="MR270" align="center"/>
+</instance>
+<instance part="R27" gate="G$1" x="50.8" y="127" smashed="yes" rot="MR270">
+<attribute name="NAME" x="48.895" y="127" size="1.524" layer="95" rot="MR270" align="center"/>
+<attribute name="VALUE" x="52.705" y="127" size="1.143" layer="96" rot="MR270" align="center"/>
+</instance>
+<instance part="R35" gate="G$1" x="50.8" y="99.06" smashed="yes" rot="MR270">
+<attribute name="NAME" x="48.895" y="99.06" size="1.524" layer="95" rot="MR270" align="center"/>
+<attribute name="VALUE" x="52.705" y="99.06" size="1.143" layer="96" rot="MR270" align="center"/>
+</instance>
+<instance part="R41" gate="G$1" x="50.8" y="71.12" smashed="yes" rot="MR270">
+<attribute name="NAME" x="48.895" y="71.12" size="1.524" layer="95" rot="MR270" align="center"/>
+<attribute name="VALUE" x="52.705" y="71.12" size="1.143" layer="96" rot="MR270" align="center"/>
+</instance>
+<instance part="U6" gate="A" x="190.5" y="160.02" smashed="yes" rot="MR180">
+<attribute name="NAME" x="190.5" y="160.02" size="1.524" layer="95" rot="MR180" align="center"/>
+</instance>
+<instance part="U6" gate="B" x="190.5" y="132.08" smashed="yes" rot="MR180">
+<attribute name="NAME" x="190.5" y="132.08" size="1.524" layer="95" rot="MR180" align="center"/>
+</instance>
+<instance part="U6" gate="C" x="190.5" y="104.14" smashed="yes" rot="MR180">
+<attribute name="NAME" x="190.5" y="104.14" size="1.524" layer="95" rot="MR180" align="center"/>
+</instance>
+<instance part="U6" gate="D" x="190.5" y="76.2" smashed="yes" rot="MR180">
+<attribute name="NAME" x="190.5" y="76.2" size="1.524" layer="95" rot="MR180" align="center"/>
+</instance>
+<instance part="U6" gate="P" x="195.58" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="195.58" y="58.42" size="1.524" layer="95" align="center"/>
+</instance>
+<instance part="C22" gate="G$1" x="195.58" y="167.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="195.58" y="165.1" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="195.58" y="170.18" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="C26" gate="G$1" x="195.58" y="139.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="195.58" y="137.16" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="195.58" y="142.24" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="C32" gate="G$1" x="195.58" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="195.58" y="109.22" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="195.58" y="114.3" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="C33" gate="G$1" x="195.58" y="83.82" smashed="yes" rot="R180">
+<attribute name="NAME" x="195.58" y="81.28" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="195.58" y="86.36" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R8" gate="G$1" x="187.96" y="172.72" smashed="yes" rot="MR180">
+<attribute name="NAME" x="187.96" y="170.815" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="187.96" y="174.625" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R21" gate="G$1" x="187.96" y="144.78" smashed="yes" rot="MR180">
+<attribute name="NAME" x="187.96" y="142.875" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="187.96" y="146.685" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R37" gate="G$1" x="187.96" y="116.84" smashed="yes" rot="MR180">
+<attribute name="NAME" x="187.96" y="114.935" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="187.96" y="118.745" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R38" gate="G$1" x="187.96" y="88.9" smashed="yes" rot="MR180">
+<attribute name="NAME" x="187.96" y="86.995" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="187.96" y="90.805" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R7" gate="G$1" x="205.74" y="160.02" smashed="yes" rot="MR180">
+<attribute name="NAME" x="205.74" y="158.115" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="205.74" y="161.925" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R14" gate="G$1" x="205.74" y="132.08" smashed="yes" rot="MR180">
+<attribute name="NAME" x="205.74" y="130.175" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="205.74" y="133.985" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R33" gate="G$1" x="205.74" y="104.14" smashed="yes" rot="MR180">
+<attribute name="NAME" x="205.74" y="102.235" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="205.74" y="106.045" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R34" gate="G$1" x="205.74" y="76.2" smashed="yes" rot="MR180">
+<attribute name="NAME" x="205.74" y="74.295" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="205.74" y="78.105" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R9" gate="G$1" x="177.8" y="162.56" smashed="yes" rot="MR180">
+<attribute name="NAME" x="177.8" y="160.655" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="177.8" y="164.465" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R26" gate="G$1" x="177.8" y="134.62" smashed="yes" rot="MR180">
+<attribute name="NAME" x="177.8" y="132.715" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="177.8" y="136.525" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R39" gate="G$1" x="177.8" y="106.68" smashed="yes" rot="MR180">
+<attribute name="NAME" x="177.8" y="104.775" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="177.8" y="108.585" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R40" gate="G$1" x="177.8" y="78.74" smashed="yes" rot="MR180">
+<attribute name="NAME" x="177.8" y="76.835" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="177.8" y="80.645" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="J3" gate="G$1" x="218.44" y="157.48" smashed="yes">
+<attribute name="NAME" x="218.44" y="161.29" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="218.44" y="153.67" size="1.016" layer="95" align="center"/>
+</instance>
+<instance part="J6" gate="G$1" x="218.44" y="129.54" smashed="yes">
+<attribute name="NAME" x="218.44" y="133.35" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="218.44" y="125.73" size="1.016" layer="95" align="center"/>
+</instance>
+<instance part="J9" gate="G$1" x="218.44" y="101.6" smashed="yes">
+<attribute name="NAME" x="218.44" y="105.41" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="218.44" y="97.79" size="1.016" layer="95" align="center"/>
+</instance>
+<instance part="J12" gate="G$1" x="218.44" y="73.66" smashed="yes">
+<attribute name="NAME" x="218.44" y="77.47" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="218.44" y="69.85" size="1.016" layer="95" align="center"/>
+</instance>
+<instance part="C31" gate="G$1" x="119.38" y="48.26" smashed="yes" rot="MR0">
+<attribute name="NAME" x="119.38" y="50.8" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="119.38" y="45.72" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="C34" gate="G$1" x="195.58" y="48.26" smashed="yes" rot="MR0">
+<attribute name="NAME" x="195.58" y="50.8" size="1.524" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="195.58" y="45.72" size="1.143" layer="96" rot="MR180" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3057,46 +3598,157 @@ Board derived from work by Max Stadler (mxmxmx)</text>
 <text x="247.65" y="19.05" size="3.81" layer="94" align="center-right">Power &amp; UI</text>
 </plain>
 <instances>
-<instance part="FRAME3" gate="G$1" x="0" y="0"/>
-<instance part="FRAME3" gate="G$2" x="147.32" y="0"/>
-<instance part="U2" gate="G$1" x="76.2" y="116.84"/>
-<instance part="U3" gate="G$1" x="76.2" y="93.98"/>
-<instance part="C10" gate="G$1" x="63.5" y="114.3" rot="R90"/>
-<instance part="C11" gate="G$1" x="88.9" y="114.3" rot="R90"/>
-<instance part="C24" gate="G$1" x="88.9" y="91.44" rot="R90"/>
-<instance part="C21" gate="G$1" x="96.52" y="91.44" rot="R90"/>
-<instance part="H3" gate="G$1" x="88.9" y="160.02"/>
-<instance part="D2" gate="G$1" x="68.58" y="167.64"/>
-<instance part="D1" gate="G$1" x="68.58" y="142.24" rot="R180"/>
-<instance part="C17" gate="G$1" x="60.96" y="147.32" rot="R270"/>
-<instance part="C18" gate="G$1" x="60.96" y="162.56" rot="R270"/>
-<instance part="C16" gate="G$1" x="53.34" y="162.56" rot="R90"/>
-<instance part="C13" gate="G$1" x="53.34" y="147.32" rot="R90"/>
-<instance part="C14" gate="G$1" x="45.72" y="162.56" rot="R90"/>
-<instance part="C15" gate="G$1" x="45.72" y="147.32" rot="R90"/>
-<instance part="S2" gate="B" x="195.58" y="144.78"/>
-<instance part="S2" gate="A" x="157.48" y="144.78" rot="R90"/>
-<instance part="S3" gate="B" x="195.58" y="127"/>
-<instance part="S3" gate="A" x="157.48" y="127" rot="R90"/>
-<instance part="C9" gate="G$1" x="195.58" y="152.4"/>
-<instance part="S1" gate="G$1" x="182.88" y="93.98"/>
-<instance part="S4" gate="G$1" x="182.88" y="76.2"/>
-<instance part="R4" gate="G$1" x="172.72" y="93.98"/>
-<instance part="R5" gate="G$1" x="172.72" y="76.2"/>
-<instance part="C8" gate="G$1" x="177.8" y="86.36"/>
-<instance part="C12" gate="G$1" x="177.8" y="68.58"/>
-<instance part="U4" gate="G$1" x="73.66" y="60.96" rot="R180"/>
-<instance part="C19" gate="G$1" x="63.5" y="60.96" rot="MR270"/>
-<instance part="C23" gate="G$1" x="83.82" y="60.96" rot="MR270"/>
-<instance part="R6" gate="G$1" x="68.58" y="68.58"/>
-<instance part="C2" gate="G$1" x="63.5" y="27.94" rot="MR270"/>
-<instance part="C4" gate="G$1" x="71.12" y="27.94" rot="MR270"/>
-<instance part="C7" gate="G$1" x="86.36" y="22.86" rot="MR270"/>
-<instance part="R2" gate="G$1" x="78.74" y="33.02" rot="R90"/>
-<instance part="R3" gate="G$1" x="78.74" y="22.86" rot="R90"/>
-<instance part="C25" gate="G$1" x="58.42" y="91.44" rot="R90"/>
-<instance part="L1" gate="G$1" x="43.18" y="96.52"/>
-<instance part="C20" gate="G$1" x="50.8" y="91.44" rot="R90"/>
+<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME3" gate="G$2" x="147.32" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="U2" gate="G$1" x="76.2" y="116.84" smashed="yes">
+<attribute name="NAME" x="76.2" y="125.73" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="76.2" y="123.19" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="U3" gate="G$1" x="76.2" y="93.98" smashed="yes">
+<attribute name="NAME" x="76.2" y="102.87" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="76.2" y="100.33" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="C10" gate="G$1" x="63.5" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="60.96" y="114.3" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="66.04" y="114.3" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="C11" gate="G$1" x="88.9" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="86.36" y="114.3" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="91.44" y="114.3" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="C24" gate="G$1" x="88.9" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="86.36" y="91.44" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="91.44" y="91.44" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="C21" gate="G$1" x="96.52" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="93.98" y="91.44" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="99.06" y="91.44" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="H3" gate="G$1" x="88.9" y="160.02" smashed="yes">
+<attribute name="NAME" x="88.9" y="166.37" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="88.9" y="163.83" size="1.016" layer="95" align="center"/>
+</instance>
+<instance part="D2" gate="G$1" x="68.58" y="167.64" smashed="yes">
+<attribute name="NAME" x="68.58" y="165.1" size="1.524" layer="95" rot="R180" align="center"/>
+</instance>
+<instance part="D1" gate="G$1" x="68.58" y="142.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="68.58" y="144.78" size="1.524" layer="95" align="center"/>
+</instance>
+<instance part="C17" gate="G$1" x="60.96" y="147.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="63.5" y="147.32" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="58.42" y="147.32" size="1.143" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="C18" gate="G$1" x="60.96" y="162.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="63.5" y="162.56" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="58.42" y="162.56" size="1.143" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="C16" gate="G$1" x="53.34" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.8" y="162.56" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="55.88" y="162.56" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="C13" gate="G$1" x="53.34" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.8" y="147.32" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="55.88" y="147.32" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="C14" gate="G$1" x="45.72" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.18" y="162.56" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="48.26" y="162.56" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="C15" gate="G$1" x="45.72" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.18" y="147.32" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="48.26" y="147.32" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="S2" gate="B" x="195.58" y="144.78" smashed="yes">
+<attribute name="NAME" x="195.58" y="142.875" size="1.524" layer="95" align="center"/>
+</instance>
+<instance part="S2" gate="A" x="157.48" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="157.48" y="151.13" size="1.524" layer="95" rot="R180" align="center"/>
+<attribute name="VALUE" x="157.48" y="139.7" size="1.016" layer="95" rot="R180" align="center"/>
+</instance>
+<instance part="S3" gate="B" x="195.58" y="127" smashed="yes">
+<attribute name="NAME" x="195.58" y="125.095" size="1.524" layer="95" align="center"/>
+</instance>
+<instance part="S3" gate="A" x="157.48" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="157.48" y="133.35" size="1.524" layer="95" rot="R180" align="center"/>
+<attribute name="VALUE" x="157.48" y="121.92" size="1.016" layer="95" rot="R180" align="center"/>
+</instance>
+<instance part="C9" gate="G$1" x="195.58" y="152.4" smashed="yes">
+<attribute name="NAME" x="195.58" y="154.94" size="1.524" layer="95" rot="R180" align="center"/>
+<attribute name="VALUE" x="195.58" y="149.86" size="1.143" layer="96" rot="R180" align="center"/>
+</instance>
+<instance part="S1" gate="G$1" x="182.88" y="93.98" smashed="yes">
+<attribute name="NAME" x="182.88" y="92.075" size="1.524" layer="95" align="center"/>
+</instance>
+<instance part="S4" gate="G$1" x="182.88" y="76.2" smashed="yes">
+<attribute name="NAME" x="182.88" y="74.295" size="1.524" layer="95" align="center"/>
+</instance>
+<instance part="R4" gate="G$1" x="172.72" y="93.98" smashed="yes">
+<attribute name="NAME" x="172.72" y="95.885" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="172.72" y="92.075" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="R5" gate="G$1" x="172.72" y="76.2" smashed="yes">
+<attribute name="NAME" x="172.72" y="78.105" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="172.72" y="74.295" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="C8" gate="G$1" x="177.8" y="86.36" smashed="yes">
+<attribute name="NAME" x="177.8" y="88.9" size="1.524" layer="95" rot="R180" align="center"/>
+<attribute name="VALUE" x="177.8" y="83.82" size="1.143" layer="96" rot="R180" align="center"/>
+</instance>
+<instance part="C12" gate="G$1" x="177.8" y="68.58" smashed="yes">
+<attribute name="NAME" x="177.8" y="71.12" size="1.524" layer="95" rot="R180" align="center"/>
+<attribute name="VALUE" x="177.8" y="66.04" size="1.143" layer="96" rot="R180" align="center"/>
+</instance>
+<instance part="U4" gate="G$1" x="73.66" y="60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="71.12" y="60.96" size="1.524" layer="95" rot="R90" align="center"/>
+</instance>
+<instance part="C19" gate="G$1" x="63.5" y="60.96" smashed="yes" rot="MR270">
+<attribute name="NAME" x="60.96" y="60.96" size="1.524" layer="95" rot="MR90" align="center"/>
+<attribute name="VALUE" x="66.04" y="60.96" size="1.143" layer="96" rot="MR90" align="center"/>
+</instance>
+<instance part="C23" gate="G$1" x="83.82" y="60.96" smashed="yes" rot="MR270">
+<attribute name="NAME" x="81.28" y="60.96" size="1.524" layer="95" rot="MR90" align="center"/>
+<attribute name="VALUE" x="86.36" y="60.96" size="1.143" layer="96" rot="MR90" align="center"/>
+</instance>
+<instance part="R6" gate="G$1" x="68.58" y="68.58" smashed="yes">
+<attribute name="NAME" x="68.58" y="70.485" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="68.58" y="66.675" size="1.143" layer="96" align="center"/>
+</instance>
+<instance part="C2" gate="G$1" x="63.5" y="27.94" smashed="yes" rot="MR270">
+<attribute name="NAME" x="60.96" y="27.94" size="1.524" layer="95" rot="MR90" align="center"/>
+<attribute name="VALUE" x="66.04" y="27.94" size="1.143" layer="96" rot="MR90" align="center"/>
+</instance>
+<instance part="C4" gate="G$1" x="71.12" y="27.94" smashed="yes" rot="MR270">
+<attribute name="NAME" x="68.58" y="27.94" size="1.524" layer="95" rot="MR90" align="center"/>
+<attribute name="VALUE" x="73.66" y="27.94" size="1.143" layer="96" rot="MR90" align="center"/>
+</instance>
+<instance part="C7" gate="G$1" x="86.36" y="22.86" smashed="yes" rot="MR270">
+<attribute name="NAME" x="83.82" y="22.86" size="1.524" layer="95" rot="MR90" align="center"/>
+<attribute name="VALUE" x="88.9" y="22.86" size="1.143" layer="96" rot="MR90" align="center"/>
+</instance>
+<instance part="R2" gate="G$1" x="78.74" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.835" y="33.02" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="80.645" y="33.02" size="1.143" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="R3" gate="G$1" x="78.74" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.835" y="22.86" size="1.524" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="80.645" y="22.86" size="1.143" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="C25" gate="G$1" x="58.42" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="55.88" y="91.44" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="60.96" y="91.44" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
+<instance part="L1" gate="G$1" x="43.18" y="96.52" smashed="yes">
+<attribute name="NAME" x="43.18" y="99.06" size="1.524" layer="95" align="center"/>
+<attribute name="VALUE" x="43.18" y="95.25" size="1.143" layer="95" align="center"/>
+</instance>
+<instance part="C20" gate="G$1" x="50.8" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.26" y="91.44" size="1.524" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="53.34" y="91.44" size="1.143" layer="96" rot="R270" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>

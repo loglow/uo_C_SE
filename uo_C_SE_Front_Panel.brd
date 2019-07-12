@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,8 +9,6 @@
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -77,7 +75,7 @@
 Front Panel
 TD-OCSE-B-FP
 CC BY-NC-SA 4.0
-2018-04-28
+2019-03-24
 tall-dog.com</text>
 <text x="20.15" y="3" size="1.5" layer="29" ratio="10" align="center">CC BY-NC-SA 4.0</text>
 <text x="20.15" y="125.5" size="1.5" layer="29" ratio="10" align="center">TD-OCSE-B</text>
@@ -553,6 +551,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -653,7 +654,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="E$1" library="uo_C_SE_Library" package="NEG-OUT" value="" x="32.65" y="58.5"/>
+<element name="E$1" library="uo_C_SE_Library" package="NEG-OUT" value="" x="32.65" y="58.5" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -687,6 +688,13 @@ design rules under a new name.</description>
 <via x="20.15" y="13.5" extent="1-16" drill="6.2" diameter="9"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="3,1,2bfb9d899df52b87"/>
 <approved hash="3,16,2bfb9d899df52b87"/>
