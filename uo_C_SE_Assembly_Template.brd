@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -45,6 +47,17 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
 <plain>
@@ -76,20 +89,16 @@
 <hole x="11.5" y="4.5" drill="6.2"/>
 <hole x="24" y="4.5" drill="6.2"/>
 <hole x="36.5" y="4.5" drill="6.2"/>
-<text x="24" y="107.5" size="1.5" layer="21" ratio="10" align="center">µo_C SE
-Assembly Template</text>
-<text x="24" y="64.5" size="2.5" layer="21" ratio="10" rot="R180" align="center">THIS SIDE
+<text x="24" y="107.5" size="2" layer="21" ratio="12" align="center">Assembly Template</text>
+<text x="24" y="64.5" size="2.5" layer="21" ratio="12" rot="R180" align="center">THIS SIDE
 FACES UP</text>
-<text x="24" y="64.5" size="2" layer="22" ratio="10" rot="MR180" align="center">THIS SIDE
+<text x="24" y="64.5" size="2" layer="22" ratio="12" rot="MR180" align="center">THIS SIDE
 FACES DOWN</text>
-<text x="24" y="50.5" size="1.5" layer="21" ratio="10" align="center">TD-OCSE-B2-AT
-2019-04-06
-tall-dog.com</text>
-<text x="24" y="107.5" size="1.5" layer="22" ratio="10" rot="MR0" align="center">µo_C SE
-Assembly Template</text>
-<text x="24" y="50.5" size="1.5" layer="22" ratio="10" rot="MR0" align="center">TD-OCSE-B2-AT
-2019-04-06
-tall-dog.com</text>
+<text x="24" y="35.75" size="2" layer="21" ratio="12" align="center">TD-OCSE-C-AT
+2020-09-13</text>
+<text x="24" y="107.5" size="2" layer="22" ratio="12" rot="MR0" align="center">Assembly Template</text>
+<text x="24" y="35.75" size="2" layer="22" ratio="12" rot="MR0" align="center">TD-OCSE-C-AT
+2020-09-13</text>
 <wire x1="6.5" y1="104.5" x2="41.5" y2="104.5" width="0" layer="20"/>
 <wire x1="43.5" y1="102.5" x2="43.5" y2="77.5" width="0" layer="20"/>
 <wire x1="41.5" y1="75.5" x2="6.5" y2="75.5" width="0" layer="20"/>
@@ -98,8 +107,43 @@ tall-dog.com</text>
 <wire x1="4.5" y1="102.5" x2="6.5" y2="104.5" width="0" layer="20" curve="-90"/>
 <wire x1="41.5" y1="104.5" x2="43.5" y2="102.5" width="0" layer="20" curve="-90"/>
 <wire x1="43.5" y1="77.5" x2="41.5" y2="75.5" width="0" layer="20" curve="-90"/>
+<text x="24" y="50.25" size="3.5" layer="22" ratio="12" rot="MR0" align="center">2.0 mm</text>
+<text x="24" y="50.25" size="3.5" layer="21" ratio="12" align="center">2.0 mm</text>
+<wire x1="16" y1="53.25" x2="32" y2="53.25" width="0.254" layer="21"/>
+<wire x1="32" y1="53.25" x2="32" y2="47.25" width="0.254" layer="21"/>
+<wire x1="32" y1="47.25" x2="16" y2="47.25" width="0.254" layer="21"/>
+<wire x1="16" y1="47.25" x2="16" y2="53.25" width="0.254" layer="21"/>
+<wire x1="16" y1="53.25" x2="32" y2="53.25" width="0.254" layer="22"/>
+<wire x1="32" y1="53.25" x2="32" y2="47.25" width="0.254" layer="22"/>
+<wire x1="32" y1="47.25" x2="16" y2="47.25" width="0.254" layer="22"/>
+<wire x1="16" y1="47.25" x2="16" y2="53.25" width="0.254" layer="22"/>
+<text x="24" y="23.25" size="2" layer="22" ratio="12" rot="MR0" align="center">tall-dog.com</text>
+<text x="24" y="23.25" size="2" layer="21" ratio="12" align="center">tall-dog.com</text>
+<text x="30.25" y="10.75" size="2" layer="21" ratio="12" align="center">µo_C SE</text>
+<text x="30.25" y="10.75" size="2" layer="22" ratio="12" rot="MR0" align="center">µo_C SE</text>
 </plain>
 <libraries>
+<library name="uo_C_SE_Library">
+<packages>
+<package name="M2.5-HOLE">
+<circle x="0" y="0" radius="2.75" width="0" layer="41"/>
+<circle x="0" y="0" radius="2.75" width="0" layer="42"/>
+<pad name="P$1" x="0" y="0" drill="2.75" diameter="5"/>
+<pad name="P$2" x="0" y="1.95" drill="0.35" stop="no"/>
+<pad name="P$3" x="0" y="-1.95" drill="0.35" stop="no"/>
+<pad name="P$4" x="-1.95" y="0" drill="0.35" stop="no"/>
+<pad name="P$5" x="1.95" y="0" drill="0.35" stop="no"/>
+<pad name="P$6" x="1.4" y="1.4" drill="0.35" stop="no"/>
+<pad name="P$7" x="-1.4" y="1.4" drill="0.35" stop="no"/>
+<pad name="P$8" x="-1.4" y="-1.4" drill="0.35" stop="no"/>
+<pad name="P$9" x="1.4" y="-1.4" drill="0.35" stop="no"/>
+<circle x="0" y="0" radius="1.375" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="52"/>
+<circle x="0" y="0" radius="1.375" width="0.127" layer="52"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -293,16 +337,34 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
+<element name="E$1" library="uo_C_SE_Library" package="M2.5-HOLE" value="" x="7" y="107.5" smashed="yes"/>
+<element name="E$2" library="uo_C_SE_Library" package="M2.5-HOLE" value="" x="41" y="107.5" smashed="yes"/>
+<element name="E$3" library="uo_C_SE_Library" package="M2.5-HOLE" value="" x="17.75" y="10.75" smashed="yes"/>
 </elements>
 <signals>
-<signal name="S$1">
-<via x="7" y="107.5" extent="1-16" drill="2.75" diameter="5"/>
-</signal>
-<signal name="S$2">
-<via x="41" y="107.5" extent="1-16" drill="2.75" diameter="5"/>
-</signal>
-<signal name="S$3">
-<via x="17.75" y="10.75" extent="1-16" drill="2.75" diameter="5"/>
+<signal name="GND">
+<polygon width="0.5" layer="1" isolate="0.5">
+<vertex x="0" y="110.5"/>
+<vertex x="48" y="110.5"/>
+<vertex x="48" y="100.5"/>
+<vertex x="48" y="73"/>
+<vertex x="44" y="69"/>
+<vertex x="44" y="0"/>
+<vertex x="4" y="0"/>
+<vertex x="4" y="69"/>
+<vertex x="0" y="73"/>
+</polygon>
+<polygon width="0.5" layer="16" isolate="0.5">
+<vertex x="0" y="110.5"/>
+<vertex x="48" y="110.5"/>
+<vertex x="48" y="100.5"/>
+<vertex x="48" y="73"/>
+<vertex x="44" y="69"/>
+<vertex x="44" y="0"/>
+<vertex x="4" y="0"/>
+<vertex x="4" y="69"/>
+<vertex x="0" y="73"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -313,22 +375,54 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="19,1,e1e0f1e0f425e425"/>
-<approved hash="19,1,01e601e604240424"/>
-<approved hash="19,1,00df0edf0d6c036c"/>
-<approved hash="19,1,e0a0d6a0d512e312"/>
-<approved hash="19,1,da21e221e574dd74"/>
-<approved hash="19,1,da75e275e364db64"/>
-<approved hash="19,1,e000f000f115e115"/>
-<approved hash="19,1,0006000601140114"/>
-<approved hash="19,16,e1e0f1e0f425e425"/>
-<approved hash="19,16,01e601e604240424"/>
-<approved hash="19,16,00df0edf0d6c036c"/>
-<approved hash="19,16,e0a0d6a0d512e312"/>
-<approved hash="19,16,da21e221e574dd74"/>
-<approved hash="19,16,da75e275e364db64"/>
-<approved hash="19,16,e000f000f115e115"/>
-<approved hash="19,16,0006000601140114"/>
+<approved hash="19,1,45444647904f934c"/>
+<approved hash="19,1,a8eca802800a80e4"/>
+<approved hash="19,1,cc37cb018309843f"/>
+<approved hash="19,1,cc34cb04030c043c"/>
+<approved hash="19,1,55445643884b8b4c"/>
+<approved hash="19,1,c547c6499041934f"/>
+<approved hash="19,1,e8ece80a800280e4"/>
+<approved hash="19,1,ef54e086888e875c"/>
+<approved hash="19,1,2dc62fbe05b607ce"/>
+<approved hash="19,1,cdc4cfa685ae87cc"/>
+<approved hash="19,1,cfd4c99e839685dc"/>
+<approved hash="19,1,2fd62986038e05de"/>
+<approved hash="19,1,af54a08e8886875c"/>
+<approved hash="19,1,b22cb032983a9a24"/>
+<approved hash="19,1,ca2cc80ac002c224"/>
+<approved hash="19,1,c4c3c5819b899acb"/>
+<approved hash="19,1,c43bc4099a019a33"/>
+<approved hash="19,1,d53bd63988318b33"/>
+<approved hash="19,1,c374c3958b9d8b7c"/>
+<approved hash="19,1,c30bc3e80be00b03"/>
+<approved hash="19,1,cc4bcb7803700443"/>
+<approved hash="19,1,cc34cb05830d843c"/>
+<approved hash="19,1,c374c3940b9c0b7c"/>
+<approved hash="19,1,c377c3918b998b7f"/>
+<approved hash="19,16,45444647904f934c"/>
+<approved hash="19,16,a8eca802800a80e4"/>
+<approved hash="19,16,af54a08e8886875c"/>
+<approved hash="19,16,d53bd63988318b33"/>
+<approved hash="19,16,c374c3958b9d8b7c"/>
+<approved hash="19,16,c30bc3e80be00b03"/>
+<approved hash="19,16,cc4bcb7803700443"/>
+<approved hash="19,16,cc34cb05830d843c"/>
+<approved hash="19,16,c374c3940b9c0b7c"/>
+<approved hash="19,16,c377c3918b998b7f"/>
+<approved hash="19,16,cc37cb018309843f"/>
+<approved hash="19,16,cc34cb04030c043c"/>
+<approved hash="19,16,55445643884b8b4c"/>
+<approved hash="19,16,c547c6499041934f"/>
+<approved hash="19,16,e8ece80a800280e4"/>
+<approved hash="19,16,ef54e086888e875c"/>
+<approved hash="19,16,2dc62fbe05b607ce"/>
+<approved hash="19,16,cdc4cfa685ae87cc"/>
+<approved hash="19,16,cfd4c99e839685dc"/>
+<approved hash="19,16,2fd62986038e05de"/>
+<approved hash="19,16,b22cb032983a9a24"/>
+<approved hash="19,16,ca2cc80ac002c224"/>
+<approved hash="19,16,c4c3c5819b899acb"/>
+<approved hash="19,16,c43bc4099a019a33"/>
 </errors>
 </board>
 </drawing>

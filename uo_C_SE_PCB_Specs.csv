@@ -1,5 +1,5 @@
 Name,Part Number,Material,Soldermask,Silkscreen,Finish,Thickness (mm),Length (mm),Width (mm),Trace (mil),Hole (mm)
-uo_C SE Main Board,TD-OCSE-B2-MB,FR-4,Matte black,White,ENIG,1.6,110.5,40.0,10,0.35
-uo_C SE Display Module,TD-OCSE-B-DM,FR-4,Matte black,White,ENIG,1.6,26.0,35.5,10,0.35
-uo_C SE Front Panel,TD-OCSE-B-FP,FR-4,Matte black,None,ENIG,2.0,128.5,40.3,N/A,N/A
-uo_C SE Assembly Template,TD-OCSE-B2-AT,FR-4,Blue,White,HASL,1.6,110.5,48.0,N/A,N/A
+uo_C SE Main Board,TD-OCSE-C-MB,FR-4,Matte black,White,ENIG,1.6,110.5,40.0,10,0.35
+uo_C SE Display Module,TD-OCSE-C-DM,FR-4,Matte black,White,ENIG,1.6,26.0,35.5,10,0.35
+uo_C SE Front Panel,TD-OCSE-C-FP,FR-4,Matte black,None,ENIG,2.0,128.5,40.3,N/A,N/A
+uo_C SE Assembly Template,TD-OCSE-C-AT,FR-4,Blue,White,HASL,1.6,110.5,48.0,N/A,N/A
